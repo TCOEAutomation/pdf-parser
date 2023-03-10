@@ -59,3 +59,11 @@ class IBillParser(BaseParser):
 
     def get_statement_summary_value(self, key):
         return self.get_from_container(key, self.statement_container)
+
+    def print_account_summary_value(self, key):
+        value = self.get_account_summary_value(key)
+        print (key + " : " + value)
+
+    def print_statement_summary_value(self, key):
+        value = self.get_statement_summary_value(key)
+        print (key + " : " + value)
